@@ -1,16 +1,16 @@
 package com.trebish.AbstractClasses;
 
 public class Employe extends Person{
-
-	public Employe(String name) {
+	private int grade;
+	public Employe(String name, int grade) {
 		super(name);
-		// TODO Auto-generated constructor stub
+		this.grade= grade;
 	}
 
 	@Override
 	public String getDescriptionOfPerson() {
-		// TODO Auto-generated method stub
-		return null;
+		
+		return super.getName() +"dont have some salary, he have only grade that is "+this.grade;
 	}
 
 }
