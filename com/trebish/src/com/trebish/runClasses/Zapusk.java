@@ -17,7 +17,7 @@ public class Zapusk {
 		Person p2 = new Manager("Uzukrab",3440.20);
 		cheli.add(p2);
 		cheli.add(p1);
-		for (Person p: cheli) System.out.println(p);
+		for (Person p: cheli) System.out.println(p.getDescriptionOfPerson());
 
 	}
 
