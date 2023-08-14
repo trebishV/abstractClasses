@@ -13,10 +13,10 @@ public class Zapusk {
 		ArrayList<Person> cheli = new ArrayList<Person>();
 		
 		
-		Person p1 = new Employe("Gubuzduk", 3);
+		Object p1 = new Employe("Gubuzduk", 3);
 		Person p2 = new Manager("Uzukrab",3440.20);
 		cheli.add(p2);
-		cheli.add(p1);
+		cheli.add((Person)p1);
 		for (Person p: cheli) System.out.println(p.getDescriptionOfPerson());
 
 	}

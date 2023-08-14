@@ -11,4 +11,13 @@ public abstract class Person {
 	}
 	
 	public abstract String getDescriptionOfPerson();
+	
+	@Override
+	public boolean equals(Object otherObj) {
+		if (this == otherObj) return true;
+		if (otherObj == null) return false;
+		if(this.getClass() != otherObj.getClass()) return false;
+		Person other = (Person)otherObj;
+		return name.equals(other.getName());
+	}
 }
