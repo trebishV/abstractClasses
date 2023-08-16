@@ -7,11 +7,12 @@ import com.trebish.AbstractClasses.*;
 
 public class Zapusk {
 	
-	//cheli.add(new Employe("Gusdabzhak", 3));
+
 	
 	public static void main(String[] args) {
 		ArrayList<Person> cheli = new ArrayList<Person>();
 		
+		Person per = new Person("Nanuz");
 		
 		Object p1 = new Employe("Gubuzduk", 3);
 		Person p2 = new Manager("Uzukrab",3440.20);
